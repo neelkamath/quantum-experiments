@@ -6,10 +6,19 @@ include "qelib1.inc";
 qreg q[4];
 creg c[2];
 
+// Inputs
 x q[0]; // Remove to keep the first input as 0.
-x q[1]; // Remove to keep the first input as 0.
+x q[1];  // Remove to keep the first input as 0.
+
+barrier q[0], q[1], q[2], q[3];
+
+// Logic
 cx q[0], q[2];
 cx q[1], q[2];
 ccx q[0], q[1], q[3];
+
+barrier q[0], q[1], q[2], q[3];
+
+// Outputs
 measure q[2] -> c[0];
 measure q[3] -> c[1];
