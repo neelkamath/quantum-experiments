@@ -14,9 +14,9 @@ I want to contribute something back to society. Researching potentially breakthr
 
 ## Usage
 
-Standalone programs are in their own directories in `src/`.
+Standalone programs are in their own directories in `src/` Prefix experiments with subsequent numbers (e.g., the second experiment has the name `2 - Entanglement`).
 
-Use the [circuit composer](https://quantum-computing.ibm.com/composer) to run OpenQASM programs, and Jupter notebooks for the Qiskit ones.
+Use the [circuit composer](https://quantum-computing.ibm.com/composer) to run OpenQASM programs, and Jupyter notebooks for the Qiskit ones.
 
 ## Contributing
 
